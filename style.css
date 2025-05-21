@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 360px;
+  height: 520px;
+  min-height: 520px;
+  max-height: 520px;
+  backdrop-filter: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  width: 100%;
+  text-align: center;
+}
+
+.tab-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 1rem 0 !important;
+  border-radius: 0 !important;
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #555;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.tab-contents {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 2rem;
+}
+
+.tab-content {
+  display: none;
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+}
+
+.tab-content p {
+  margin: 0;
+}
+
+.about-content {
+  text-align: left;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 auto 1rem auto;
+  max-width: 320px;
+  font-family: 'Montserrat', sans-serif;
+  background: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.external-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+#my-store {
+  background-color: #d3d3d3;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.social-link i {
+  font-size: 1.5rem;
+}
+
+/* Social colors */
+.whatsapp {
+  background: #25D366;
+  box-shadow: 0 4px 12px #25D366;
+}
+
+.whatsapp:hover {
+  background: #1ebe57;
+  box-shadow: 0 8px 20px #1ebe57;
+}
+
+.spotify {
+  background: #1DB954;
+  box-shadow: 0 4px 12px #1DB954;
+}
+
+.spotify:hover {
+  background: #17a74a;
+  box-shadow: 0 8px 20px #17a74a;
+}
+
+.discord {
+  background: #7289DA;
+  box-shadow: 0 4px 12px #7289DA;
+}
+
+.discord:hover {
+  background: #5b6eae;
+  box-shadow: 0 8px 20px #5b6eae;
+}
+
+.tiktok {
+  background: #000000;
+  box-shadow: 0 4px 12px #000000;
+}
+
+.tiktok:hover {
+  background: #222222;
+  box-shadow: 0 8px 20px #222222;
+}
+
+.youtube {
+  background: #FF0000;
+  box-shadow: 0 4px 12px #FF0000;
+}
+
+.youtube:hover {
+  background: #cc0000;
+  box-shadow: 0 8px 20px #cc0000;
+}
+
+.shopee {
+  background: #EE4D2D;
+  box-shadow: 0 4px 12px #EE4D2D;
+}
+
+.shopee:hover {
+  background: #c43e23;
+  box-shadow: 0 8px 20px #c43e23;
+}
+
+.tokopedia {
+  background: #3ECF8E;
+  box-shadow: 0 4px 12px #3ECF8E;
+}
+
+.tokopedia:hover {
+  background: #2ea974;
+  box-shadow: 0 8px 20px #2ea974;
+}
+
+.social-link.mystore {
+  background-color: #808080;
+  box-shadow: 0 4px 12px #808080;
+}
+
+.social-link.mystore:hover {
+  background-color: #666666;
+  box-shadow: 0 8px 20px #666666;
+}
+
+.social-link.sheaprofil {
+  background: #ff69b4; /* pink background */
+  box-shadow: 0 4px 12px #ff69b4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.social-link.sheaprofil:hover {
+  background: #e055a1;
+  box-shadow: 0 8px 20px #e055a1;
+}
+
+.social-link.mystore,
+.social-link.shopee,
+.social-link.tokopedia,
+.social-link.sheaprofil {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  text-align: center;
+}
+
+.social-link.mystore img,
+.social-link.sheaprofil img,
+.social-link.shopee i,
+.social-link.tokopedia i {
+  position: absolute;
+  left: 1rem;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.social-link.mystore img,
+.social-link.sheaprofil img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.social-link.shopee i,
+.social-link.tokopedia i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.social-link.sheaprofil:hover {
+  background: #e055a1;
+  box-shadow: 0 8px 20px #e055a1;
+}
+
+.social-link.sheaprofil img {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.social-link.instagram {
+  background: #E1306C;
+  box-shadow: 0 4px 12px #E1306C;
+}
+
+.social-link.instagram:hover {
+  background: #b02859;
+  box-shadow: 0 8px 20px #b02859;
+}
+
+.social-link.portofolio {
+  background: #007BFF;
+  box-shadow: 0 4px 12px #007BFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px #007BFF;
+}
+
+.social-link.portofolio:hover {
+  background: #0056b3;
+  box-shadow: 0 8px 20px #0056b3;
+}
+
+.social-link.portofolio i {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1rem;
+  color: white;
+}
